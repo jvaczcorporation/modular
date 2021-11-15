@@ -109,7 +109,7 @@ abstract class IModularNavigator implements Listenable {
   /// ```
   /// Modular.to.navigate('/home');
   /// ```
-  void navigate(String path, {dynamic arguments});
+  Future<void> navigate(String path, {dynamic arguments});
 
   void setObserver(List<NavigatorObserver> navigatorObservers);
 
